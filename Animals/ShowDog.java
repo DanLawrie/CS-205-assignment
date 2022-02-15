@@ -23,5 +23,12 @@ public class ShowDog extends Dog{
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}
+	/*
+	 * returns string with fur color and breed
+	 */
+	public String toString() {
+		return "fur color: " + getFurColor() + ", breed: " + getBreed();
+		
+	}
 
 }
