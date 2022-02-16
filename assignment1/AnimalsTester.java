@@ -1,9 +1,26 @@
 package edu.monmouth.assignment1;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class AnimalsTester {
 	public static final int numAnimals = 6;
 	private static short meanness = 5;
 	public static void main(String[] args) {
+		//changing output to HW1 text and making sure itdoes not pass through with file not found exception
+		final String LOGFILENAME = "C:\\Users\\dlawr\\eclipse-workspace\\Cs-205L\\src\\edu\\monmouth\\assignment1\\HW1.txt";
+		
+		try {    
+	        PrintStream stout = new PrintStream(LOGFILENAME); 
+	        System.setOut(stout); 
+	        System.setErr(stout); 
+		} catch(FileNotFoundException ioe) { 
+	        System.err.println("Cannot redirect stderr and stdout " + ioe.getMessage()); 
+	        ioe.printStackTrace(); 
+	        System.exit(-1); 
+	} 
+		
+		
 		//creates an empty array of animals
 		Animal[] arrayOfAnimals = new Animal[numAnimals];
 		
@@ -12,6 +29,8 @@ public class AnimalsTester {
 		arrayOfAnimals[1] = new Fish("purple");
 		arrayOfAnimals[2] = new GuardDog("black", meanness);
 		arrayOfAnimals[3] = new ShowDog("brown", "shih Tzu");
+		
+		meanness = 9;
 		arrayOfAnimals[4] = new GuardDog("brown", meanness);
 		arrayOfAnimals[5] = new Fish("green");
 		
@@ -43,27 +62,7 @@ public class AnimalsTester {
 				i++;
 			}
 		}
-	//	System.out.println(getName());
-		/*
-		 * 2. An abstract method is a method that cannot be instantiated directly. This is useful because it hides irrelevant information.
-		 * 
-		 * 3. A class can be instantiated while interfaces cannot be instantiated.
-		 * 
-		 * 4. It cannot be instantiated directly because you will be defying the object oriented model
-		 * 
-		 * 5. This is because GaurdDogs extends to dog which implements animal and fish also implements animal.
-		 * 
-		 * 6. The methods that get executed are the ones called from the main method or constructor.
-		 * 
-		 * 7. It will cause an error.
-		 * 
-		 * 8. fur color and meanness
-		 * 
-		 * 9.fur color and breed
-		 * 
-		 * 10.Abstract
-		 * 
-		 */
+
 	}
 
 }

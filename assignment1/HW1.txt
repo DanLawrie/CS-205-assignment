@@ -1,0 +1,54 @@
+fur color: white
+You have moved
+Woof
+Color: purple
+The fish has moved
+bubble
+Fur Color: black, Meanness: 5
+You have moved
+Woof
+fur color: brown, breed: shih Tzu
+You have moved
+Woof
+Fur Color: brown, Meanness: 9
+You have moved
+Woof
+Color: green
+The fish has moved
+bubble
+fur color: white
+You have moved
+Woof
+Color: purple
+The fish has moved
+bubble
+Fur Color: black, Meanness: 5
+You have moved
+Woof
+fur color: brown, breed: shih Tzu
+You have moved
+Woof
+Fur Color: brown, Meanness: 9
+You have moved
+Woof
+Color: green
+The fish has moved
+bubble
+fur color: white
+You have moved
+Woof
+Color: purple
+The fish has moved
+bubble
+Fur Color: black, Meanness: 5
+You have moved
+Woof
+fur color: brown, breed: shih Tzu
+You have moved
+Woof
+Fur Color: brown, Meanness: 9
+You have moved
+Woof
+Color: green
+The fish has moved
+bubble
