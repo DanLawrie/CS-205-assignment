@@ -2,7 +2,7 @@ package edu.monmouth.assignment1;
 
 	public class Dog implements Animal{
 		protected String furColor = "";
-		private static final String bark = "Woof";
+		
 		
 		
 		/*
@@ -32,14 +32,14 @@ package edu.monmouth.assignment1;
 		 */
 		@Override
 		public void move(){
-			System.out.println("You have moved");
+			System.out.println(Constants.DOGMOTION);
 		}
 		/*
 		 * prints out what is in bark when the method is called
 		 */
 		@Override
 		public void makeSound() {
-			System.out.println(bark);
+			System.out.println(Constants.BARK);
 		}
 		
 		/*

@@ -2,8 +2,7 @@ package edu.monmouth.assignment1;
 
 public class Fish implements Animal{
 	protected String color = "";
-	private static final String fishMovement = "The fish has moved";
-	private static final String fishNoise = "bubble";
+	
 	
 	/*
 	 * accepts a String and sets color to that String
@@ -15,14 +14,14 @@ public class Fish implements Animal{
 	//prints out how the fish has moved as a String
 	@Override
 	public void move() {
-		System.out.println(fishMovement);
+		System.out.println(Constants.FISHMOTION);
 	}
 	
 	
 	//prints out a fish noise from the fish
 	@Override
 	public void makeSound() {
-		System.out.println(fishNoise);
+		System.out.println(Constants.FISHNOISE);
 	}
 	//gets the color and returns it
 	public String getColor() {

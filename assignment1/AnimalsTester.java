@@ -4,8 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
 public class AnimalsTester {
-	public static final int numAnimals = 6;
+	//creates an empty array of animals
+	static Animal[] arrayOfAnimals = new Animal[Constants.NUMANIMALS];
 	private static short meanness = 5;
+	
 	public static void main(String[] args) {
 		//changing output to HW1 text and making sure itdoes not pass through with file not found exception
 		final String LOGFILENAME = "C:\\Users\\dlawr\\eclipse-workspace\\Cs-205L\\src\\edu\\monmouth\\assignment1\\HW1.txt";
@@ -21,9 +23,7 @@ public class AnimalsTester {
 	} 
 		
 		
-		//creates an empty array of animals
-		Animal[] arrayOfAnimals = new Animal[numAnimals];
-		
+
 		//declares animals
 		arrayOfAnimals[0] = new Dog("white");
 		arrayOfAnimals[1] = new Fish("purple");
@@ -41,6 +41,7 @@ public class AnimalsTester {
 			System.out.println(arrayOfAnimals[i].toString());
 			arrayOfAnimals[i].move();
 			arrayOfAnimals[i].makeSound();
+			System.out.println();
 			}
 		}
 		//goes through each animal in the array and calls tostring and has it move and make a sound
@@ -49,6 +50,7 @@ public class AnimalsTester {
 			System.out.println(animals);
 			animals.move();
 			animals.makeSound();
+			System.out.println();
 			}
 		}
 		//goes through each animal in the array and calls tostring and has it move and make a sound
@@ -60,9 +62,22 @@ public class AnimalsTester {
 				arrayOfAnimals[i].move();
 				arrayOfAnimals[i].makeSound();
 				i++;
+				System.out.println();
 			}
 		}
+		
+		
 
 	}
-
+	
+	
+	//iterates through array and prints it out
+	public void arrayPrint() {
+		for(int i = 0; i< arrayOfAnimals.length;i++) {
+			if(arrayOfAnimals[i] != null) {
+			System.out.println(arrayOfAnimals[i]);
+			}
+		}
+	}
+	
 }
